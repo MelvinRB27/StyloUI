@@ -1,0 +1,56 @@
+{
+  "name": "stylo-ui",
+  "author": "Melvin Ruiz Batista",
+  "version": "1.0.0",
+  "description": "Una librería de componentes estilizados con TailwindCSS",
+  "main": "dist/index.js",
+  "module": "dist/index.esm.js",
+  "types": "dist/types/index.d.ts",
+  "scripts": {
+    "build": "rollup -c",
+    "prepare": "pnpm run build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "react",
+    "components",
+    "tailwindcss",
+    "UI"
+  ],
+  "license": "MIT",
+  "packageManager": "pnpm@10.5.1",
+  "dependencies": {
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "tslib": "^2.8.1"
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^28.0.2",
+    "@rollup/plugin-node-resolve": "^16.0.0",
+    "@rollup/plugin-typescript": "^12.1.2",
+    "@types/react": "^19.0.10",
+    "@types/react-dom": "^19.0.4",
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.5.3",
+    "rollup": "^4.34.8",
+    "rollup-plugin-postcss": "^4.0.2",
+    "tailwindcss": "^4.0.9",
+    "typescript": "^5.7.3"
+  },
+  "peerDependencies": {
+    "react": ">=17.0.0",
+    "react-dom": ">=17.0.0",
+    "tailwindcss": ">=3.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MelvinRB27/StyloUI.git"
+  },
+  "bugs": {
+    "url": "https://github.com/MelvinRB27/StyloUI/issues"
+  },
+  "homepage": "https://github.com/MelvinRB27/StyloUI#readme",
+  "publishConfig": {
+    "access": "public"
+  }
+}
