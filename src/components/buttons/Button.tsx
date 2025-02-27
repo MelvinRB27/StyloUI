@@ -1,22 +1,25 @@
 import React from "react";
+import styles from "./Button.module.css";
 
-// Exporta explícitamente el tipo ButtonProps
 export interface ButtonProps
   extends React.ButtonHTMLAttributes<HTMLButtonElement> {
-  className?: string;
+  variant?: ButtonVariant;
+  size?: ButtonSize;
 }
 
 export const Button: React.FC<ButtonProps> = ({
+  variant,
+  size,
   className,
   children,
   ...props
 }) => {
+  const classes = ` ${styles["StyloUI-button"]} ${size && styles[size]} ${
+    variant && styles[variant]
+  }`;
   return (
     <button
-      className={`px-4 py-2 bg-primary text-white rounded co
-        h-[56px] p-8 border
-        
-        ${className || ""}`}
+      className={`${styles.button} ${classes}  ${className || ""} `}
       {...props}
     >
       {children}

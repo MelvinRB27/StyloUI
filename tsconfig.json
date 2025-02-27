@@ -8,9 +8,10 @@
     "declarationMap": true,
     "declarationDir": "./dist/types",
     "outDir": "./dist",
-    "esModuleInterop": true,
     "skipLibCheck": true,
-    "strict": true
+    "strict": true,
+    "resolveJsonModule": true,
+    "esModuleInterop": true
   },
   "include": ["src"]
 }

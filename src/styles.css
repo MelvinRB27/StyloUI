@@ -1,3 +1,13 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+:root {
+  font-family: "Nunito Sans", sans-serif;
+  --primary-color: #7067cf; /* Color primario (azul) */
+  --secondary-color: #b7c0ee; /* Color secundario (gris) */
+  --text-color: #330c2f; /* Color de texto (negro/gris oscuro) */
+  --background-color: #f8f9fa; /* Fondo de la página (gris claro) */
+  --border-color: #ddd; /* Color del borde */
+}
+
+input[type="password"]::-ms-reveal,
+input[type="password"]::-webkit-credentials-auto-fill-button {
+  display: none;
+}
