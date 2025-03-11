@@ -5,6 +5,7 @@
   --text-color: #330c2f; /* Color de texto (negro/gris oscuro) */
   --background-color: #f8f9fa; /* Fondo de la página (gris claro) */
   --border-color: #ddd; /* Color del borde */
+  --link-color: #006eff;
 }
 
 input[type="password"]::-ms-reveal,
