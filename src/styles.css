@@ -1,11 +1,15 @@
 :root {
   font-family: "Nunito Sans", sans-serif;
-  --primary-color: #7067cf; /* Color primario (azul) */
-  --secondary-color: #b7c0ee; /* Color secundario (gris) */
-  --text-color: #330c2f; /* Color de texto (negro/gris oscuro) */
-  --background-color: #f8f9fa; /* Fondo de la página (gris claro) */
-  --border-color: #ddd; /* Color del borde */
+  --primary-color: #7067cf;
+  --secondary-color: #b7c0ee;
+  --text-color: #330c2f;
+  --background-color: #f8f9fa;
+  --border-color: #ddd;
   --link-color: #006eff;
+  --alert-info-color: #17a2b8;
+  --alert-succes-color: #28a745;
+  --alert-warning-color: #ffc107;
+  --alert-danger-color: #dc3545;
 }
 
 input[type="password"]::-ms-reveal,
