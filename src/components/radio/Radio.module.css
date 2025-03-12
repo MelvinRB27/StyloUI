@@ -1,4 +1,4 @@
-.radioContainer {
+.StyloUI-radio-container {
   display: flex;
   align-items: center;
   justify-items: center;
@@ -7,17 +7,18 @@
   cursor: pointer;
 }
 
-.radio {
+.StyloUI-radio {
   width: 20px;
   height: 20px;
   accent-color: var(--primary-color);
+  cursor: pointer;
 }
 
-.radioLabel {
+.StyloUI-radio-label {
   font-size: 16px;
   color: var(--text-color);
 }
 
-.radio:checked {
+.StyloUI-radio:checked {
   border-color: var(--primary-color);
 }

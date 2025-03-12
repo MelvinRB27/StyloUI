@@ -13,7 +13,7 @@ export const Default = () => {
     <Radio
       label="Default"
       checked={checked}
-      onChange={(e) => setChecked(e.target.checked)}
+      onCheckedChange={(checked) => setChecked(checked)}
     />
   );
 };

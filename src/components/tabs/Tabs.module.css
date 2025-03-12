@@ -1,0 +1,24 @@
+.StyloUI-tabs-container {
+  display: flex;
+  border-bottom: 2px solid var(--border-color, #ddd);
+  gap: 8px;
+}
+
+.StyloUI-tab-container {
+  padding: 10px 16px;
+  cursor: pointer;
+  font-weight: 500;
+  color: var(--text-color);
+  border-bottom: 2px solid transparent;
+  transition: all 0.3s ease-in-out;
+}
+
+.StyloUI-tab-container:hover {
+  color: var(--primary-color, #7067cf);
+}
+
+.StyloUI-tab-active {
+  color: var(--primary-color, #7067cf);
+  border-bottom: 2px solid var(--primary-color, #7067cf);
+  font-weight: 600;
+}

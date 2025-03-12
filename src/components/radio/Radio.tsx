@@ -28,17 +28,20 @@ export const Radio: React.FC<RadioInputProps> = ({
 
   return (
     <label
-      className={styles.radioContainer}
+      className={styles["StyloUI-radio-container"]}
       style={{ flexDirection: flexDirection }}
     >
       <input
         type="radio"
         {...props}
-        onChange={(e) => onCheckedChange?.(e.target.checked)}
-        className={`${styles.radio} ${className ?? ""}`}
+        onChange={(e) => {
+          onCheckedChange?.(e.target.checked);
+          props.onChange?.(e);
+        }}
+        className={`${styles["StyloUI-radio"]} ${className ?? ""}`}
       />
 
-      {label && <span className={styles.radioLabel}>{label}</span>}
+      {label && <span className={styles["StyloUI-radio-label"]}>{label}</span>}
     </label>
   );
 };

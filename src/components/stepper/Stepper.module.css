@@ -1,0 +1,87 @@
+/* Contenedor general */
+.StyloUI-steps-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin: 20px auto;
+}
+
+/* Contenedor de pasos */
+.StyloUI-steps {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+}
+
+/* Estilo para los pasos cuando están en modo vertical */
+.StyloUI-steps.vertical {
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+/* Cada paso */
+.StyloUI-step {
+  display: flex;
+  align-items: center;
+  text-align: left;
+  gap: 16px;
+}
+
+/* Círculo */
+.StyloUI-step-circle {
+  width: 40px;
+  height: 40px;
+  border-radius: 3.08px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 400;
+  background-color: #8a9099;
+  padding: 7.69px;
+  color: white;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.StyloUI-step-circle.active {
+  background: #0082c8;
+  color: white;
+}
+
+.StyloUI-step-circle.completed {
+  background: #58ac25;
+}
+
+/* Título del paso */
+.StyloUI-step-title {
+  font-size: 16px;
+  color: #62666d;
+  transition: color 0.3s ease;
+  font-weight: 700;
+  font-family: "Quicksand";
+}
+
+.StyloUI-step-title.active {
+  color: #3a3c40;
+}
+
+.StyloUI-step-description {
+  font-size: 14px;
+  color: #62666d;
+  transition: color 0.3s ease;
+  font-weight: 400;
+  font-family: "Lato";
+}
+
+.StyloUI-step-description.active {
+  color: #3a3c40;
+}
+
+/* Línea de conexión entre pasos */
+.StyloUI-step-line {
+  height: 38px;
+  width: 2px;
+  margin-left: 17px;
+}

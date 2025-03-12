@@ -1,0 +1,46 @@
+.StyloUI-tab-container {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0px 16px;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 14px;
+  color: var(--text-color, #333);
+  background-color: transparent;
+  border: none;
+  transition: color 0.3s ease-in-out, border-bottom 0.3s ease-in-out,
+    transform 0.2s ease-in-out;
+  position: relative;
+}
+
+.StyloUI-tab-container:hover {
+  color: var(--primary-color, #7067cf);
+}
+
+.StyloUI-tab-active {
+  color: var(--primary-color, #7067cf);
+  font-weight: 600;
+}
+
+.StyloUI-tab-active::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0%;
+  height: 2px;
+  background-color: var(--primary-color, #7067cf);
+  transition: width 0.3s ease-in-out, left 0.3s ease-in-out;
+  transform: translateX(-50%);
+}
+
+.StyloUI-tab-active:hover::after {
+  width: 100%;
+}
+
+.StyloUI-tab-disabled {
+  color: var(--border-color, #bbb);
+  cursor: not-allowed;
+  opacity: 0.6;
+}
