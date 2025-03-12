@@ -1,0 +1,72 @@
+{
+  "name": "stylo-ui",
+  "author": "Melvin Ruiz Batista",
+  "version": "1.0.0",
+  "description": "Una librería de componentes estilizados con CSS",
+  "main": "dist/index.js",
+  "module": "dist/index.esm.js",
+  "types": "dist/types/index.d.ts",
+  "style": "dist/index.css",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "rollup -c",
+    "prepare": "pnpm run build",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
+  },
+  "keywords": [
+    "react",
+    "components",
+    "tailwindcss",
+    "UI"
+  ],
+  "license": "MIT",
+  "packageManager": "pnpm@10.5.1",
+  "dependencies": {
+    "clsx": "^2.1.1",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-icons": "^5.5.0",
+    "tailwindcss-animate": "^1.0.7",
+    "tslib": "^2.8.1"
+  },
+  "devDependencies": {
+    "@chromatic-com/storybook": "3.2.5",
+    "@rollup/plugin-commonjs": "^28.0.2",
+    "@rollup/plugin-node-resolve": "^16.0.0",
+    "@rollup/plugin-typescript": "^12.1.2",
+    "@storybook/addon-essentials": "8.6.0",
+    "@storybook/addon-interactions": "8.6.0",
+    "@storybook/addon-onboarding": "8.6.0",
+    "@storybook/blocks": "8.6.0",
+    "@storybook/react": "8.6.0",
+    "@storybook/react-vite": "8.6.0",
+    "@storybook/test": "8.6.0",
+    "@tailwindcss/postcss": "^4.0.9",
+    "@types/react": "^19.0.10",
+    "@types/react-dom": "^19.0.4",
+    "css-loader": "^7.1.2",
+    "rollup": "^4.34.8",
+    "rollup-plugin-postcss": "^4.0.2",
+    "storybook": "8.6.0",
+    "typescript": "^5.7.3"
+  },
+  "peerDependencies": {
+    "react": ">=17.0.0",
+    "react-dom": ">=17.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MelvinRB27/StyloUI.git"
+  },
+  "bugs": {
+    "url": "https://github.com/MelvinRB27/StyloUI/issues"
+  },
+  "homepage": "https://github.com/MelvinRB27/StyloUI#readme",
+  "publishConfig": {
+    "access": "public"
+  }
+}
