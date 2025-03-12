@@ -1,0 +1,11 @@
+/* .StyloUI-Link-Container {
+} */
+
+.StyloUI-Link {
+  color: var(--link-color);
+  /* text-decoration: none !important; */
+}
+
+.StyloUI-Link:active {
+  color: var(--link-active-color);
+}

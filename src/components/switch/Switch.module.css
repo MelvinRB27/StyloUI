@@ -1,0 +1,69 @@
+/* Contenedor principal */
+.StyloUI-Container {
+  position: relative;
+  display: flex;
+  gap: 4px;
+  align-items: center;
+  cursor: pointer;
+}
+
+/* Input checkbox oculto */
+.StyloUI-Switch {
+  position: absolute;
+  width: 0;
+  height: 0;
+  opacity: 0;
+}
+
+.StyloUI-Switch-label {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-color);
+}
+
+/* Track del switch */
+.StyloUI-Track {
+  position: relative;
+  width: 3.2rem;
+  height: 1rem;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 1.5rem;
+  box-shadow: inset 0 0 5px rgba(97, 147, 204, 0.3);
+  transition: background-color 0.3s ease-in-out;
+}
+
+/* Track cuando está activado */
+.StyloUI-Switch:checked + .StyloUI-Track {
+  background-color: var(--primary-color);
+}
+
+/* Estilos para el "thumb" (círculo deslizante) */
+.StyloUI-Thumb {
+  position: absolute;
+  top: 50%;
+  left: 0.25rem;
+  width: 1.5rem;
+  height: 1.5rem;
+  background-color: white;
+  border-radius: 50%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Mover el thumb cuando el switch está activado */
+.StyloUI-Switch:checked + .StyloUI-Track .StyloUI-Thumb {
+  transform: translate(1.5rem, -50%);
+}
+
+/* Dark mode */
+.dark .StyloUI-Track {
+  background-color: rgb(55, 65, 81);
+}
+
+.dark .StyloUI-Thumb {
+  background-color: rgb(107, 114, 128);
+}

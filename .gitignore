@@ -1,0 +1,44 @@
+# Node modules
+/node_modules/
+
+# Output directories
+/dist/
+/build/
+
+# Log files
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# IDE / Editor folders
+.vscode/
+.idea/
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# TypeScript
+*.tsbuildinfo
+
+# Optional npm cache directory
+.npm/
+
+# pnpm store (optional, depending on the setup)
+.pnpm-store/
+
+# Rollup configuration files
+.rollup.cache/
+
+# Tailwind CSS generated files (if you don't want to track them)
+*.css.map
+
+# .env files
+.env
+.env.local
+.env.development
+.env.test
+.env.production
+
+*storybook.log
